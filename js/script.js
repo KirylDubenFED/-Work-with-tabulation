@@ -10,4 +10,7 @@ function tabClick(event) {
   const tabPanel = tabs.querySelector(`[aria-labelledby="${id}"]`);
   tabPanel.hidden = false;
 }
-tabButtons.forEach(button => button.addEventListener('click', tabClick));
+tabButtons.forEach(
+ function (button) {
+   button.addEventListener('click', tabClick)
+});
